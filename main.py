@@ -4,7 +4,7 @@ from coordinate import Coordinate
 
 def main():
     pawn = Pawn(Coordinate.A1)
-    pawn.get_position()
+    pawn.move(Coordinate.A1)
 
 
 if __name__ == "__main__":

@@ -2,5 +2,5 @@ from pieces.piece import Piece
 
 
 class Pawn(Piece):
-    def get_position(self):
-        print('I am getting my position')
+    def is_move_valid(self):
+        return True

@@ -7,5 +7,10 @@ class Piece(ABC):
         super(Piece, self).__init__()
 
     @abstractmethod
-    def get_position(self):
+    def is_move_valid(self, new_coordinate):
         pass
+
+    def move(self, new_coordinate):
+        if self.is_move_valid():
+            self.coordinate = new_coordinate
+            print('I have moved');
