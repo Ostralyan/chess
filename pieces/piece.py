@@ -10,7 +10,11 @@ class Piece(ABC):
     def is_move_valid(self, new_coordinate):
         pass
 
+    @abstractmethod
+    def get_valid_moves(self):
+        pass
+
     def move(self, new_coordinate):
         if self.is_move_valid():
             self.coordinate = new_coordinate
-            print('I have moved');
+            print('I have moved')
