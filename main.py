@@ -1,10 +1,10 @@
-from pieces.pawn import Pawn
-from board.coordinate import Coordinate
+from players.player import Human
+from players.color import Color
 
 
 def main():
-    pawn = Pawn(Coordinate.a1)
-    pawn.move(Coordinate.a1)
+    human = Human(Color.BLACK)
+    print(human.available_pieces)
 
 
 if __name__ == "__main__":
