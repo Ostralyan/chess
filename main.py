@@ -1,13 +1,13 @@
 from players.player import Human
 from players.color import Color
-
+from board.board import Board
 
 def main():
-    human = Human(Color.BLACK)
+    white = Human(Color.WHITE)
+    black = Human(Color.BLACK)
 
-    for piece in human.available_pieces:
-        print(piece)
-
+    Board(white, black)
 
 if __name__ == "__main__":
     main()
+    
