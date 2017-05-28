@@ -22,6 +22,11 @@ class Piece(ABC):
             self.coordinate = new_coordinate
             print('I have moved')
 
+    @staticmethod
+    def is_on_board(possible_move):
+        return (possible_move[0] > 0 and possible_move[0] < 9) and \
+                (possible_move[1] > 0 and possible_move[1] < 9)
+
 
 class King(Piece):
     def is_move_valid(self):
@@ -33,12 +38,11 @@ class King(Piece):
             for y in range(-1, 2):
                 possible_move = tuple(
                         map(sum, zip(self.coordinate.value, (x, y))))
-                if (possible_move[0] > 0 and possible_move[0] < 9) and \
-                        (possible_move[1] > 0 and possible_move[1] < 9):
+                if (self.is_on_board(possible_move)):
                     possible_moves.append(Coordinate(possible_move))
         possible_moves.remove(self.coordinate)
         return possible_moves
-                    
+
     def __str__(self):
         if self.color == Color.WHITE:
             return u'\u2654'
