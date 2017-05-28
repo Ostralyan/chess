@@ -13,8 +13,10 @@ def main():
 
     print(board)
 
-    king = King(Coordinate.e4, Color.WHITE)
-    king.get_possible_moves()
+    print(board.board[Coordinate.d8].is_on_board)
+    print(board.board[Coordinate.e8].is_on_board)
+
+
 
 
 if __name__ == "__main__":
