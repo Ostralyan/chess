@@ -7,6 +7,8 @@ class Piece(ABC):
     def __init__(self, coordinate, color):
         self.coordinate = coordinate
         self.color = color
+        global moved
+        moved = False  # define moved when move() has not been called
         super(Piece, self).__init__()
 
     @abstractmethod
@@ -18,7 +20,9 @@ class Piece(ABC):
         pass
 
     def move(self, new_coordinate):
+        global moved
         if self.is_move_valid():
+            moved = True
             self.coordinate = new_coordinate
             print('I have moved')
 
@@ -33,7 +37,7 @@ class King(Piece):
         raise NotImplementedError
 
     def get_possible_moves(self):
-        possible_moves = []  
+        possible_moves = []
         for x in range(-1, 2):
             for y in range(-1, 2):
                 possible_move = tuple(
@@ -112,32 +116,32 @@ class Pawn(Piece):
     def is_move_valid(self):
         return True
 
-    # Pawn unique starting move
-    def is_starting_position(starting_coordinate):
-        valid_start_coordinate = [(1, 4), (2, 4), (3, 4), (4, 4), (5, 4), (6, 4), (7, 4), (8, 4)]
-        if (starting_coordinate.value in valid_start_coordinate):
-            # pass in coords from coord.Coord or numerical values work? diff?
-            return True  # 16 checks for valid pawn starting positions
+    def has_moved(self):
+        global moved
+        if(moved is True):
+            return True
+        return False
 
     def get_possible_moves(self):
         possible_moves = []
-        starting_move = tuple(map(sum, zip(self.coordinate.value, (0, 2))))
+        starting_move = tuple(
+            map(sum, zip(self.coordinate.value, (0, 2))))
         print("starting move", starting_move)
         # if pos is valid start pos, possible_moves.append starting_move
         if (self.is_on_board(starting_move) and
-                self.is_starting_position(starting_move)):
+                self.has_moved() is False):
             possible_moves.append(Coordinate(starting_move))
         # possible_moves.remove(self.coordinate)
 
         for x in range(-1, 2):
-            for y in range(0, 2):
+            for y in range(1, 2):
                 possible_move = tuple(
                     map(sum, zip(self.coordinate.value, (x, y))))
                 if (self.is_on_board(possible_move)):
                     possible_moves.append(Coordinate(possible_move))
         print("selfcoordvaluepawn", self.coordinate.value)
         possible_moves.remove(self.coordinate)
-        print(possible_moves)
+        print("possible moves: ", possible_moves)
         return possible_moves
 
     def __str__(self):
