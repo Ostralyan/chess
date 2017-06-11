@@ -1,0 +1,114 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+BLACK	players/color.py	/^    BLACK = 2$/;"	v	class:Color
+Bishop	pieces/piece.py	/^class Bishop(Piece):$/;"	c
+Board	board/board.py	/^class Board():$/;"	c
+Color	players/color.py	/^class Color(Enum):$/;"	c
+Computer	players/player.py	/^class Computer(Player):$/;"	c
+Coordinate	board/coordinate.py	/^class Coordinate(Enum):$/;"	c
+Human	players/player.py	/^class Human(Player):$/;"	c
+King	pieces/piece.py	/^class King(Piece):$/;"	c
+Knight	pieces/piece.py	/^class Knight(Piece):$/;"	c
+Pawn	pieces/piece.py	/^class Pawn(Piece):$/;"	c
+Piece	pieces/piece.py	/^class Piece(ABC):$/;"	c
+Player	players/player.py	/^class Player(ABC):$/;"	c
+Queen	pieces/piece.py	/^class Queen(Piece):$/;"	c
+Rook	pieces/piece.py	/^class Rook(Piece):$/;"	c
+WHITE	players/color.py	/^    WHITE = 1$/;"	v	class:Color
+__init__	board/board.py	/^    def __init__(self, white_player, black_player):$/;"	m	class:Board
+__init__	pieces/piece.py	/^    def __init__(self, coordinate, color):$/;"	m	class:Piece
+__init__	players/player.py	/^    def __init__(self, color):$/;"	m	class:Player
+__str__	board/board.py	/^    def __str__(self):$/;"	m	class:Board	file:
+__str__	pieces/piece.py	/^    def __str__(self):$/;"	m	class:Bishop	file:
+__str__	pieces/piece.py	/^    def __str__(self):$/;"	m	class:King	file:
+__str__	pieces/piece.py	/^    def __str__(self):$/;"	m	class:Knight	file:
+__str__	pieces/piece.py	/^    def __str__(self):$/;"	m	class:Pawn	file:
+__str__	pieces/piece.py	/^    def __str__(self):$/;"	m	class:Queen	file:
+__str__	pieces/piece.py	/^    def __str__(self):$/;"	m	class:Rook	file:
+a1	board/coordinate.py	/^    a1 = (1, 1)$/;"	v	class:Coordinate
+a2	board/coordinate.py	/^    a2 = (1, 2)$/;"	v	class:Coordinate
+a3	board/coordinate.py	/^    a3 = (1, 3)$/;"	v	class:Coordinate
+a4	board/coordinate.py	/^    a4 = (1, 4)$/;"	v	class:Coordinate
+a5	board/coordinate.py	/^    a5 = (1, 5)$/;"	v	class:Coordinate
+a6	board/coordinate.py	/^    a6 = (1, 6)$/;"	v	class:Coordinate
+a7	board/coordinate.py	/^    a7 = (1, 7)$/;"	v	class:Coordinate
+a8	board/coordinate.py	/^    a8 = (1, 8)$/;"	v	class:Coordinate
+b1	board/coordinate.py	/^    b1 = (2, 1)$/;"	v	class:Coordinate
+b2	board/coordinate.py	/^    b2 = (2, 2)$/;"	v	class:Coordinate
+b3	board/coordinate.py	/^    b3 = (2, 3)$/;"	v	class:Coordinate
+b4	board/coordinate.py	/^    b4 = (2, 4)$/;"	v	class:Coordinate
+b5	board/coordinate.py	/^    b5 = (2, 5)$/;"	v	class:Coordinate
+b6	board/coordinate.py	/^    b6 = (2, 6)$/;"	v	class:Coordinate
+b7	board/coordinate.py	/^    b7 = (2, 7)$/;"	v	class:Coordinate
+b8	board/coordinate.py	/^    b8 = (2, 8)$/;"	v	class:Coordinate
+c1	board/coordinate.py	/^    c1 = (3, 1)$/;"	v	class:Coordinate
+c2	board/coordinate.py	/^    c2 = (3, 2)$/;"	v	class:Coordinate
+c3	board/coordinate.py	/^    c3 = (3, 3)$/;"	v	class:Coordinate
+c4	board/coordinate.py	/^    c4 = (3, 4)$/;"	v	class:Coordinate
+c5	board/coordinate.py	/^    c5 = (3, 5)$/;"	v	class:Coordinate
+c6	board/coordinate.py	/^    c6 = (3, 6)$/;"	v	class:Coordinate
+c7	board/coordinate.py	/^    c7 = (3, 7)$/;"	v	class:Coordinate
+c8	board/coordinate.py	/^    c8 = (3, 8)$/;"	v	class:Coordinate
+d1	board/coordinate.py	/^    d1 = (4, 1)$/;"	v	class:Coordinate
+d2	board/coordinate.py	/^    d2 = (4, 2)$/;"	v	class:Coordinate
+d3	board/coordinate.py	/^    d3 = (4, 3)$/;"	v	class:Coordinate
+d4	board/coordinate.py	/^    d4 = (4, 4)$/;"	v	class:Coordinate
+d5	board/coordinate.py	/^    d5 = (4, 5)$/;"	v	class:Coordinate
+d6	board/coordinate.py	/^    d6 = (4, 6)$/;"	v	class:Coordinate
+d7	board/coordinate.py	/^    d7 = (4, 7)$/;"	v	class:Coordinate
+d8	board/coordinate.py	/^    d8 = (4, 8)$/;"	v	class:Coordinate
+e1	board/coordinate.py	/^    e1 = (5, 1)$/;"	v	class:Coordinate
+e2	board/coordinate.py	/^    e2 = (5, 2)$/;"	v	class:Coordinate
+e3	board/coordinate.py	/^    e3 = (5, 3)$/;"	v	class:Coordinate
+e4	board/coordinate.py	/^    e4 = (5, 4)$/;"	v	class:Coordinate
+e5	board/coordinate.py	/^    e5 = (5, 5)$/;"	v	class:Coordinate
+e6	board/coordinate.py	/^    e6 = (5, 6)$/;"	v	class:Coordinate
+e7	board/coordinate.py	/^    e7 = (5, 7)$/;"	v	class:Coordinate
+e8	board/coordinate.py	/^    e8 = (5, 8)$/;"	v	class:Coordinate
+f1	board/coordinate.py	/^    f1 = (6, 1)$/;"	v	class:Coordinate
+f2	board/coordinate.py	/^    f2 = (6, 2)$/;"	v	class:Coordinate
+f3	board/coordinate.py	/^    f3 = (6, 3)$/;"	v	class:Coordinate
+f4	board/coordinate.py	/^    f4 = (6, 4)$/;"	v	class:Coordinate
+f5	board/coordinate.py	/^    f5 = (6, 5)$/;"	v	class:Coordinate
+f6	board/coordinate.py	/^    f6 = (6, 6)$/;"	v	class:Coordinate
+f7	board/coordinate.py	/^    f7 = (6, 7)$/;"	v	class:Coordinate
+f8	board/coordinate.py	/^    f8 = (6, 8)$/;"	v	class:Coordinate
+g1	board/coordinate.py	/^    g1 = (7, 1)$/;"	v	class:Coordinate
+g2	board/coordinate.py	/^    g2 = (7, 2)$/;"	v	class:Coordinate
+g3	board/coordinate.py	/^    g3 = (7, 3)$/;"	v	class:Coordinate
+g4	board/coordinate.py	/^    g4 = (7, 4)$/;"	v	class:Coordinate
+g5	board/coordinate.py	/^    g5 = (7, 5)$/;"	v	class:Coordinate
+g6	board/coordinate.py	/^    g6 = (7, 6)$/;"	v	class:Coordinate
+g7	board/coordinate.py	/^    g7 = (7, 7)$/;"	v	class:Coordinate
+g8	board/coordinate.py	/^    g8 = (7, 8)$/;"	v	class:Coordinate
+get_possible_moves	pieces/piece.py	/^    def get_possible_moves():$/;"	m	class:Bishop
+get_possible_moves	pieces/piece.py	/^    def get_possible_moves(self):$/;"	m	class:King
+get_possible_moves	pieces/piece.py	/^    def get_possible_moves(self):$/;"	m	class:Knight
+get_possible_moves	pieces/piece.py	/^    def get_possible_moves(self):$/;"	m	class:Pawn
+get_possible_moves	pieces/piece.py	/^    def get_possible_moves(self):$/;"	m	class:Piece
+get_possible_moves	pieces/piece.py	/^    def get_possible_moves(self):$/;"	m	class:Queen
+get_possible_moves	pieces/piece.py	/^    def get_possible_moves(self):$/;"	m	class:Rook
+h1	board/coordinate.py	/^    h1 = (8, 1)$/;"	v	class:Coordinate
+h2	board/coordinate.py	/^    h2 = (8, 2)$/;"	v	class:Coordinate
+h3	board/coordinate.py	/^    h3 = (8, 3)$/;"	v	class:Coordinate
+h4	board/coordinate.py	/^    h4 = (8, 4)$/;"	v	class:Coordinate
+h5	board/coordinate.py	/^    h5 = (8, 5)$/;"	v	class:Coordinate
+h6	board/coordinate.py	/^    h6 = (8, 6)$/;"	v	class:Coordinate
+h7	board/coordinate.py	/^    h7 = (8, 7)$/;"	v	class:Coordinate
+h8	board/coordinate.py	/^    h8 = (8, 8)$/;"	v	class:Coordinate
+is_move_valid	pieces/piece.py	/^    def is_move_valid():$/;"	m	class:Bishop
+is_move_valid	pieces/piece.py	/^    def is_move_valid(self):$/;"	m	class:King
+is_move_valid	pieces/piece.py	/^    def is_move_valid(self):$/;"	m	class:Knight
+is_move_valid	pieces/piece.py	/^    def is_move_valid(self):$/;"	m	class:Pawn
+is_move_valid	pieces/piece.py	/^    def is_move_valid(self):$/;"	m	class:Queen
+is_move_valid	pieces/piece.py	/^    def is_move_valid(self):$/;"	m	class:Rook
+is_move_valid	pieces/piece.py	/^    def is_move_valid(self, new_coordinate):$/;"	m	class:Piece
+is_on_board	pieces/piece.py	/^    def is_on_board(possible_move):$/;"	m	class:Piece
+main	main.py	/^def main():$/;"	f
+move	pieces/piece.py	/^    def move(self, new_coordinate):$/;"	m	class:Piece
+move	players/player.py	/^    def move(self, piece, coordinate):$/;"	m	class:Human
+move	players/player.py	/^    def move(self, piece, coordinate):$/;"	m	class:Player

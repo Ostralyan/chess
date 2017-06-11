@@ -27,6 +27,10 @@ class Piece(ABC):
             print('I have moved')
 
     @staticmethod
+    def can_take_piece(color):
+        return True
+
+    @staticmethod
     def is_on_board(possible_move):
         return (possible_move[0] > 0 and possible_move[0] < 9) and \
                 (possible_move[1] > 0 and possible_move[1] < 9)
@@ -126,22 +130,23 @@ class Pawn(Piece):
         possible_moves = []
         starting_move = tuple(
             map(sum, zip(self.coordinate.value, (0, 2))))
-        print("starting move", starting_move)
-        # if pos is valid start pos, possible_moves.append starting_move
+        # print("starting move", starting_move)
         if (self.is_on_board(starting_move) and
                 self.has_moved() is False):
             possible_moves.append(Coordinate(starting_move))
-        # possible_moves.remove(self.coordinate)
 
         for x in range(-1, 2):
             for y in range(1, 2):
                 possible_move = tuple(
                     map(sum, zip(self.coordinate.value, (x, y))))
-                if (self.is_on_board(possible_move)):
+                if (self.is_on_board(possible_move) and
+                        self.can_take_piece(self.color)):
                     possible_moves.append(Coordinate(possible_move))
-        print("selfcoordvaluepawn", self.coordinate.value)
-        possible_moves.remove(self.coordinate)
-        print("possible moves: ", possible_moves)
+        print("selfcoordvaluepawn:", self.coordinate, self.color)
+        if (self.coordinate in possible_moves):
+            possible_moves.remove(self.coordinate)
+            # no error but why is self.coordinate not in possible_moves
+        print("possible moves:", possible_moves)
         return possible_moves
 
     def __str__(self):
